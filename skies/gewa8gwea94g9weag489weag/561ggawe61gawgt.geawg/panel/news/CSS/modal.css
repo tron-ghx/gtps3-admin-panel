@@ -1,0 +1,94 @@
+/* Modal */
+
+.dark-bg{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 99998;
+}
+
+.GTModal{
+	display: none;
+	position: fixed;
+	top: 3%;
+	left: 3%;
+	width: 80%;
+	height: auto;
+	max-height: 90%;
+	background-color: rgba(68,129,166,0.7);
+	background-opacity: 0.8;
+	z-index: 99999;
+	padding: 10px 20px;
+	border: 5px SOLID rgb(190, 232, 241);
+	border-radius: 7px;
+	box-shadow: rgb(0, 0, 0) 3px 3px, rgb(0, 0, 0) 3px 3px inset;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.GTModal .header p{
+	position: relative;
+	top: -8px;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline;
+}
+
+.GTModal .colorable p{
+	color: rgb(252, 230, 186);
+	border-bottom-color: rgb(252, 230, 186);
+	font-family: CenturyGothicBold, sans-serif;
+	font-size: 22px;
+}
+
+.GTModal .sign{
+	color: rgb(252, 230, 186);
+	position: relative;
+	top: -8px;
+	font-family: CenturyGothicBold;
+	display: inline;
+}
+
+.growButton{
+	all: unset;
+	text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    color: #FFF;
+    box-shadow: 2px 2px #000000;
+    font-size: 20px;
+    font-family: CenturyGothicBold;
+    padding: 7px 10px 10px 10px;
+    text-shadow: 1.5px 1.5px rgba(0,0,0,0.7);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.growButton{
+	background-color: #89C3D6;
+}
+
+.growButton:disabled{
+	opacity: 0.7;
+}
+
+.growCancelButton{
+	background-color: #ffcd00;
+}
+
+.GTModal .GTText{
+	background: none;
+	padding: 5px 10px;
+	border: none;
+	border-bottom: 3px SOLID rgb(190, 232, 241);
+	box-shadow: rgb(0, 0, 0) 0px 2px;
+}
+
+.GTModal .end p{
+	font-weight: bold;
+}

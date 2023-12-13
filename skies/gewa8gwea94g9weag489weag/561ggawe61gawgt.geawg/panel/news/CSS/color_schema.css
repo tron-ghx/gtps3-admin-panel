@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* Color Schemes */
+
+.lBlue {
+	background-color: #32597E!important;
+}
+
+.dBlue {
+	background-color: rgba(18,57,94,0.75)!important;
+}
+
+/* OPACITY COMMANDS */
+
+.op-7h {
+	opacity: 0.75;
+}
+
+.op-8 {
+	opacity: 0.80;
+}
+
+/* MARGINS, PADDINGS AND RADIUS */
+
+.p-0 {
+	padding: 0!important;
+}
+
+.p-10 {
+	padding: 10px!important;
+}
+
+.p-5 {
+	padding: 5px!important;
+}
+
+.r-5 {
+	border-radius: 5px!important;
+}
+
+.m-10_b {
+	margin-bottom: 10px;
+}
+
+/* FONT SIZES */
+
+.fs-14 {
+	font-size: 14px!important;
+}
+
+/* PIC SIZES */
+
+.p-32 {
+	width: 32px;
+	height: 32px;
+}
+
+.p-24 {
+	width: 24px;
+	height: 24px;
+}
+
+.p-16 {
+	width: 16px;
+	height: 16px;
+}
+
+/* TEXT ALIGN */
+
+.tal-L {
+	text-align: left!important;
+}
+
+.tal-C {
+	text-align: center!important;
+}
+
+.tal-R {
+	text-align: right!important;
+}
+
+/* FLOATS */
+
+.fl-L {
+	float: left!important;
+}
+
+.fl-C {
+	float: center!important;
+}
+
+.fl-R {
+	float: right!important;
+}
+
+/* WIDTHS */
+
+.mdc-card,
+.card__primary {
+	width: 100%!important;
+}
+
+.s-32 {
+	width: 32px!important;
+	height: 32px!important;
+}
