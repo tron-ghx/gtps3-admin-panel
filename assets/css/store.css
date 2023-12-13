@@ -1,0 +1,157 @@
+html,body {
+  font-family:Helvetica,Arial,Sans-Serif;
+  height:100%;
+  margin:0;
+  overflow:hidden;
+  padding:0;
+  width:100%;
+}
+
+div,p {box-sizing:border-box}
+
+.highlight {color:#F3D515}
+
+#particleContainer {
+  height:100%;
+  overflow:hidden;
+  pointer-events:none;
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+.particle {
+  background-color:#ff32ce;
+  pointer-events:none;
+  position:absolute;
+  transition:all 8s cubic-bezier(.2,.2,.5,.7);
+}
+
+#mainContainer {
+  background-image:url("../img/bg.png");
+  background-position:center;
+  background-size:cover;
+  height:100%;
+  overflow:hidden;
+  width:100%;
+}
+
+#animatedObjects {
+  height:100%;
+  max-height:100%;
+  max-width:100%;
+  overflow:hidden;
+  position:absolute;
+  width:100%;
+}
+
+#clouds {
+  -webkit-animation:cloudsAnim linear 90s infinite;
+  animation:cloudsAnim linear 90s infinite;
+  background-image:url("../img/bg_clouds.png");
+  background-position:0 100px;
+  background-repeat:repeat-x;
+  height:100%;
+  min-width:2732px;
+  position:absolute;
+  width:200%;
+}
+
+#rays {
+  -webkit-animation:raysAnim linear 200s infinite;
+  animation:raysAnim linear 200s infinite;
+  background-image:url("../img/bg_rays.png");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:0;
+  margin:-75% 0 0 -50%;
+  padding-bottom:200%;
+  position:absolute;
+  width:200%;
+}
+
+#portal {
+  bottom:0;
+  height:550px;
+  left:0;
+  margin:auto;
+  position:absolute;
+  right:0;
+  text-align:center;
+  top:0;
+  width:1000px;
+}
+
+#onlineCounter {
+  background-color:rgba(0,0,0,.15);
+  bottom:0;
+  box-shadow:inset 0 0 8px;
+  font-size: 14px;
+  height:38px;
+  left:20px;
+  line-height: 34px;
+  margin:0 auto;
+  position:absolute;
+  right:0;
+  text-align:center;
+  width:550px;
+}
+
+#onlineCounter h2 {
+  color:#eee;
+  font-family:"Lucida Grande", Helvetica, Sans-Serif;
+  margin:0;
+  text-shadow:-1px 0 0 #000,0 -1px 0 #000,1px 0 0 #000,0 1px 0 #000,0 0 2px #000
+}
+
+#buttons {
+  bottom:75px;
+  height:200px;
+  position:absolute;
+  width:1000px;
+}
+
+.button {
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:190px;
+  cursor:pointer;
+  display:inline-block;
+  height:200px;
+  transition:background-size .2s ease;
+  width:200px;
+}
+
+.button:hover {background-size:200px}
+.button:active {background-size:180px}
+
+#button1 {background-image: url("../img/back.gif");}
+
+#logo {}
+/*
+@media screen and (max-height: 600px){#portal{position:relative}}
+@media screen and (max-width:  800px){#portal{position:relative}}
+*/
+
+@-webkit-keyframes cloudsAnim{
+  0%   {-webkit-transform:translateX(-1366px)}
+  100% {-webkit-transform:translateX(0)}
+}
+
+@-webkit-keyframes raysAnim{
+  0%   {-webkit-transform:rotateZ(0deg)}
+  100% {-webkit-transform:rotateZ(-360deg)}
+}
+
+
+@keyframes cloudsAnim{
+  0%   {transform:translateX(-1366px)}
+  100% {transform:translateX(0)}
+}
+
+@keyframes raysAnim{
+  0%   {transform:rotateZ(0deg)}
+  100% {transform:rotateZ(-360deg)}
+}
+
